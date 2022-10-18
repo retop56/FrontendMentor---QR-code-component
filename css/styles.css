@@ -1,0 +1,13 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --color-one: hsl(212, 45%, 89%);
+  --color-two: hsl(220, 15%, 55%);
+  --bold-text-color: hsl(218, 44%, 22%);
+  --fw-light: 400;
+  --fw-bold: 700;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Outfit", sans-serif;
+}
