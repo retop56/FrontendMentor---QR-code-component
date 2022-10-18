@@ -1,13 +1,51 @@
 :root {
   --white: hsl(0, 0%, 100%);
-  --color-one: hsl(212, 45%, 89%);
-  --color-two: hsl(220, 15%, 55%);
+  --main-bg-color: hsl(212, 45%, 89%);
+  --color-light-text: hsl(220, 15%, 55%);
   --bold-text-color: hsl(218, 44%, 22%);
   --fw-light: 400;
   --fw-bold: 700;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 15px;
   font-family: "Outfit", sans-serif;
+  background-color: var(--main-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 1px);
+  overflow: hidden;
+}
+
+.main-container {
+  max-width: 90%;
+  height: 30rem;
+  margin: 20% auto;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.main-container > img {
+  height: 50%;
+  width: auto;
+}
+
+.main-text {
+  color: var(--bold-text-color);
+  font-weight: var(--fw-bold);
+  text-align: center;
+}
+
+.subtext {
+  color: var(--color-light-text);
+  font-weight: var(--fw-light);
+  text-align: center;
 }
