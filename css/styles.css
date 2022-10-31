@@ -24,7 +24,7 @@ body {
   overflow: hidden;
 }
 
-.main-container {
+main {
   max-width: 90%;
   height: 32rem;
   margin: 20% auto;
@@ -36,10 +36,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 0rem;
 }
 
-.main-container > img {
+img {
   width: 100%;
   /* max-width: 375px; */
   border-radius: 20px;
@@ -48,23 +48,14 @@ body {
   flex-shrink: 1;
 }
 
-.text-container {
-  width: 90%;
-  max-height: 35%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex: 1;
-  margin: 0;
-  padding: 0;
-}
-
 .main-text {
   color: var(--bold-text-color);
   font-weight: var(--fw-bold);
   text-align: center;
   font-size: 22px;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.7rem;
+  padding: 0 1rem;
 }
 
 .subtext {
@@ -72,15 +63,16 @@ body {
   font-weight: var(--fw-light);
   text-align: center;
   margin: 0;
+  padding: 0 2rem;
 }
 
 @media only screen and (min-width: 440px) {
-  .main-container {
+  main {
     width: 22rem;
     height: 33rem;
   }
 
-  .main-container > img {
+  img {
     width: 20rem;
   }
 }
